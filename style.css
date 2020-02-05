@@ -10,11 +10,11 @@ body::before {
   content: '';
   top: -10px;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 99vh;
   background-image: url('images/background.jpg');
   background-size: cover;
-  opacity: .2;
+  opacity: .5;
   position: absolute;
   z-index: -1;
 }
@@ -109,13 +109,26 @@ a {
 
 @media (max-width: 720px) {
   .container {
-    width: 95vw;
+    width: 90vw;
   }
 }
 
-/*@media (max-width: 540px) {
-  .container {
-    width: 100vw;
+@media (max-width: 540px) {
+  .link-container {
+    justify-content: center;
+  }
+  .link-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 5px auto;
+  }
+  .link-list a {
+    display: block;
+    font-size: 14px;
+  }
+  .link-list a {
+    margin-top: 5px;
   }
 }
-*/
+
